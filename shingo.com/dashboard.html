@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-container {
+            text-align: center;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 40px;
+        }
+
+        .widget {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 40px;
+        }
+
+        .widget-box {
+            width: 45%;
+            padding: 30px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .widget-box:hover {
+            background-color: #000;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .widget-box a {
+            
+            color: inherit;
+            
+        }
+
+        .widget-box h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: inherit;
+        }
+
+        .logout-btn {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout-btn:hover {
+            background-color: #007bff;
+        }
+
+        .logout-btn span {
+            font-size: 16px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h1>Dashboard</h1>
+        
+        <div class="widget">
+            <div class="widget-box">
+                <h3><a href="book.html"> Book Service</a> </h3>
+            </div>
+            <div class="widget-box" >
+                <h3><a href="viewbook.html">View Booked Service</a> </h3>
+            </div>
+        </div>
+        
+        <button class="logout-btn">
+            <img src="https://img.icons8.com/ios-glyphs/30/ffffff/logout-rounded.png" alt="Logout Icon"/>
+            <span>Logout</span>
+        </button>
+    </div>
+
+</body>
+</html>
